@@ -69,14 +69,15 @@
 <body>
     <div class="container">
         <h1>Student Form</h1>
-        <div><label>Name :</label><input id="name" type="text" placeholder="Enter your name"></div>
+        <form>
+        <div><label>Name :</label><input id="name" type="text" placeholder="Enter your name" required></div>
         <br>
-        <div><label>Age in:</label> <input id="age" type="number" placeholder="Enter your age"></div>
+        <div><label>Age in:</label> <input id="age" type="number" placeholder="Enter your age" required></div>
         <br>
-        <div><label>Gender:</label><input type="radio" name="gender" value="male"><label>Male</label><input type="radio"
+        <div><label>Gender:</label><input type="radio" name="gender" value="male" required><label>Male</label><input type="radio"
                 name="gender" value="female"><label>Female</label></div>
         <br>
-        <div><label>Course:</label><select id="course">
+        <div><label>Course:</label><select id="course" required>
                 <option></option>
                 <option>Java Script</option>
                 <option>Mongo Db</option>
@@ -84,9 +85,11 @@
                 <option>Node.js</option>
             </select></div>
         <br>
-        <div><label>E-mail:</label><input id="email" type="email" placeholder="Enter your e-mail"></div>
+        <div><label>E-mail:</label><input id="email" type="email" placeholder="Enter your e-mail" required></div>
         <button id="btn">Save</button>
+        </form>
         </div>
+
         <div class="studentTable">
             <table border="1">
                 <thead >
